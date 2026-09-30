@@ -1,0 +1,13 @@
+{
+  "name": "crazy-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "落叶归根 · 个人站（纯静态）",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
