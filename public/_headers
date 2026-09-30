@@ -1,0 +1,23 @@
+# 安全响应头（所有路径）
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+
+# HTML 永远回源校验，避免改了页面用户还看到旧的
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# 图片缓存 30 天
+/img/*
+  Cache-Control: public, max-age=2592000
+
+# 样式和脚本缓存 1 天
+/css/*
+  Cache-Control: public, max-age=86400
+
+/js/*
+  Cache-Control: public, max-age=86400

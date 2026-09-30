@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>介绍 · 落叶归根</title>
+<meta name="description" content="关于 Crazy 的一些碎碎念：心灵随笔、了解自我、倾听音乐。">
+<link rel="icon" href="img/me.png">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("crazy-theme");
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<div class="bg-deco" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">Crazy<span>.</span></a>
+    <nav class="nav__links" aria-label="主导航">
+      <a href="index.html">主页</a>
+      <a href="HomPage.html" class="is-active" aria-current="page">介绍</a>
+      <a href="MyWorks.html">作品</a>
+      <a href="MyContact.html">联系</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="切换深色模式">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== 引言横幅 ===== -->
+  <section class="section" style="padding-bottom: 0">
+    <div class="container">
+      <div class="banner reveal">
+        <h1 class="banner__title">生生的两端，我们彼此站成了岸</h1>
+        <blockquote class="banner__quote">
+          “我从来没有招惹你，你为什么要来招惹我？<br>
+          既然招惹了，就不要半途而废！”
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 正文 + 侧栏 ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="split">
+
+        <article class="panel reveal">
+          <h2 class="panel__title">心灵随笔</h2>
+          <div class="poem">
+            <p>向来缘浅，奈何情深</p>
+            <p>如果世界上曾经有那个人出现过，<br>其他人都会变成将就。</p>
+            <p>他说，我不愿意将就。</p>
+            <p>那时候的我还不明白，<br>有一种平静，叫做死水微澜。<br>平静是因为已经有所决定。<br>决定了要等下去。</p>
+            <p>有些人的伤口是在时间中慢慢痊愈，<br>如我。有些人的伤口是在时间中<br>慢慢溃烂，如他。</p>
+            <p>原来这些年，<br>他痊愈的只是外表，有一种伤,<br>它深入骨髓，在你看不见的地方肆虐。</p>
+          </div>
+        </article>
+
+        <aside class="split__aside">
+
+          <div class="panel reveal">
+            <h2 class="panel__title">了解自我</h2>
+            <dl class="facts">
+              <div class="facts__row">
+                <dt class="facts__key">网名</dt>
+                <dd class="facts__val">crazy</dd>
+              </div>
+              <div class="facts__row">
+                <dt class="facts__key">性别</dt>
+                <dd class="facts__val">男</dd>
+              </div>
+              <div class="facts__row">
+                <dt class="facts__key">追星</dt>
+                <dd class="facts__val">乐正绫 / 洛天依</dd>
+              </div>
+              <div class="facts__row">
+                <dt class="facts__key">爱好</dt>
+                <dd class="facts__val">web安全 / 逆向 / 金融 / 法律</dd>
+              </div>
+              <div class="facts__row">
+                <dt class="facts__key">游戏</dt>
+                <dd class="facts__val">三国杀</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="panel reveal">
+            <h2 class="panel__title">倾听音乐</h2>
+            <div class="quote">
+              <p>路再远再蜿蜒仍是个圈，<br>缘起处注定盘桓成终点。</p>
+              <p class="quote__by">—— 乐正绫</p>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h2 class="panel__title">精选图片</h2>
+            <div class="gallery-mini">
+              <img class="span-1" src="img/tuLeft.jpg" alt="乐正绫与洛天依同人插画" data-zoom="img/tuLeft.jpg" loading="lazy">
+              <img class="span-1" src="img/tuRight.webp" alt="精选插画" data-zoom="img/tuRight.webp" loading="lazy">
+              <img class="span-2" src="img/tuBottom.webp" alt="精选插画" data-zoom="img/tuBottom.webp" loading="lazy">
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <div class="footer__brand">Crazy<span>.</span></div>
+      <p class="footer__line">路再远再蜿蜒仍是个圈，缘起处注定盘桓成终点。</p>
+    </div>
+    <nav class="footer__nav" aria-label="页脚导航">
+      <a href="index.html">主页</a>
+      <a href="HomPage.html">介绍</a>
+      <a href="MyWorks.html">作品</a>
+      <a href="MyContact.html">联系</a>
+    </nav>
+  </div>
+  <div class="footer__copy">Copyright 2017. Studio Crazy All Rights Reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
